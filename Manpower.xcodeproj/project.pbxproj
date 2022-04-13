@@ -1,0 +1,968 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B32522732803E5DB00F8F869 /* SigninViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B32522722803E5DB00F8F869 /* SigninViewModelTests.swift */; };
+		B32522752803E9F200F8F869 /* DashboardViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B32522742803E9F200F8F869 /* DashboardViewModelTests.swift */; };
+		B325227B2803F4A400F8F869 /* EmployeeFormViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B325227A2803F4A400F8F869 /* EmployeeFormViewModelTests.swift */; };
+		B36A3B3427FD381E004E5353 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B36A3B3327FD381E004E5353 /* AppDelegate.swift */; };
+		B36A3B3627FD381E004E5353 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B36A3B3527FD381E004E5353 /* SceneDelegate.swift */; };
+		B36A3B3B27FD381E004E5353 /* Onboarding.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B36A3B3927FD381E004E5353 /* Onboarding.storyboard */; };
+		B36A3B3D27FD3822004E5353 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B36A3B3C27FD3822004E5353 /* Assets.xcassets */; };
+		B36A3B4027FD3822004E5353 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B36A3B3E27FD3822004E5353 /* LaunchScreen.storyboard */; };
+		B36A3B4B27FD3824004E5353 /* ManpowerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B36A3B4A27FD3824004E5353 /* ManpowerTests.swift */; };
+		B36A3B5527FD3824004E5353 /* ManpowerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B36A3B5427FD3824004E5353 /* ManpowerUITests.swift */; };
+		B36A3B5727FD3824004E5353 /* ManpowerUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B36A3B5627FD3824004E5353 /* ManpowerUITestsLaunchTests.swift */; };
+		B38378E727FED9B7004DEFCE /* DashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B38378E627FED9B7004DEFCE /* DashboardViewController.swift */; };
+		B38378E927FED9C6004DEFCE /* Dashboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B38378E827FED9C6004DEFCE /* Dashboard.storyboard */; };
+		B38378EB27FEF51E004DEFCE /* EmailValidateable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B38378EA27FEF51E004DEFCE /* EmailValidateable.swift */; };
+		B38378F027FF03C4004DEFCE /* EmployeeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B38378EE27FF03C4004DEFCE /* EmployeeTableViewCell.swift */; };
+		B38378F127FF03C4004DEFCE /* EmployeeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B38378EF27FF03C4004DEFCE /* EmployeeTableViewCell.xib */; };
+		B38378F327FFC7AD004DEFCE /* DashboardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B38378F227FFC7AD004DEFCE /* DashboardViewModel.swift */; };
+		B38378F527FFD1E0004DEFCE /* ApplicationCoordinator+Dashboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = B38378F427FFD1E0004DEFCE /* ApplicationCoordinator+Dashboard.swift */; };
+		B38378F827FFD334004DEFCE /* EmployeeFormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B38378F727FFD334004DEFCE /* EmployeeFormViewController.swift */; };
+		B38378FA27FFD341004DEFCE /* EmployeeFormViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B38378F927FFD341004DEFCE /* EmployeeFormViewModel.swift */; };
+		B3B0EBB727FD624B00CA5048 /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3B0EBB627FD624B00CA5048 /* OnboardingViewController.swift */; };
+		B3BBCBB127FD6E5000E0E73C /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3BBCBB027FD6E5000E0E73C /* Coordinator.swift */; };
+		B3BBCBB327FD6FB300E0E73C /* Storyboarded.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3BBCBB227FD6FB300E0E73C /* Storyboarded.swift */; };
+		B3BBCBB527FD6FDB00E0E73C /* ApplicationCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3BBCBB427FD6FDB00E0E73C /* ApplicationCoordinator.swift */; };
+		B3E9E7D82803C8DA001AA9E7 /* AuthServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3E9E7D72803C8DA001AA9E7 /* AuthServiceTests.swift */; };
+		B3E9E7DA2803C91B001AA9E7 /* AuthMockService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3E9E7D92803C91B001AA9E7 /* AuthMockService.swift */; };
+		B3E9E7DD2803C9B8001AA9E7 /* EmployeeMockService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3E9E7DC2803C9B8001AA9E7 /* EmployeeMockService.swift */; };
+		B3E9E7DF2803CF02001AA9E7 /* EmployeeServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3E9E7DE2803CF02001AA9E7 /* EmployeeServiceTests.swift */; };
+		B3E9E7E22803D207001AA9E7 /* SignupViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3E9E7E12803D207001AA9E7 /* SignupViewModelTests.swift */; };
+		B3E9E7F72803D9C5001AA9E7 /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = B3E9E7F62803D9C5001AA9E7 /* RxCocoa */; };
+		B3E9E7F92803D9C5001AA9E7 /* RxRelay in Frameworks */ = {isa = PBXBuildFile; productRef = B3E9E7F82803D9C5001AA9E7 /* RxRelay */; };
+		B3E9E7FB2803D9C5001AA9E7 /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = B3E9E7FA2803D9C5001AA9E7 /* RxSwift */; };
+		B3FD172527FD72FD00911880 /* Storyboards.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3FD172427FD72FD00911880 /* Storyboards.swift */; };
+		B3FD172A27FD7A3100911880 /* SigninViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3FD172927FD7A3100911880 /* SigninViewController.swift */; };
+		B3FD172C27FD822200911880 /* SigninViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3FD172B27FD822200911880 /* SigninViewModel.swift */; };
+		B3FD173027FD860900911880 /* ApplicationCoordinator+Signin.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3FD172F27FD860900911880 /* ApplicationCoordinator+Signin.swift */; };
+		B3FD173227FD863300911880 /* ApplicationCoordinator+Onboarding.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3FD173127FD863300911880 /* ApplicationCoordinator+Onboarding.swift */; };
+		B3FD173427FD88D600911880 /* ApplicationCoordinator+Navigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3FD173327FD88D600911880 /* ApplicationCoordinator+Navigation.swift */; };
+		B3FD173727FD8C2600911880 /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3FD173627FD8C2600911880 /* SignupViewController.swift */; };
+		B3FD174027FD9EE300911880 /* ApplicationCoordinator+Signup.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3FD173F27FD9EE300911880 /* ApplicationCoordinator+Signup.swift */; };
+		B3FD174227FDA9FF00911880 /* SignupViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3FD174127FDA9FF00911880 /* SignupViewModel.swift */; };
+		B3FD174427FDAAA100911880 /* TextFieldStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3FD174327FDAAA100911880 /* TextFieldStatus.swift */; };
+		B3FD174727FDB00500911880 /* Reactive+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3FD174627FDB00500911880 /* Reactive+Extensions.swift */; };
+		B3FD174927FDF88A00911880 /* FileLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3FD174827FDF88A00911880 /* FileLoader.swift */; };
+		B3FD174B27FDF8B300911880 /* Saveable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3FD174A27FDF8B300911880 /* Saveable.swift */; };
+		B3FD174D27FDF8D100911880 /* AuthServiceable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3FD174C27FDF8D100911880 /* AuthServiceable.swift */; };
+		B3FD174F27FDF90100911880 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3FD174E27FDF90100911880 /* User.swift */; };
+		B3FD175127FDF91C00911880 /* Employee.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3FD175027FDF91C00911880 /* Employee.swift */; };
+		B3FD175327FDFA7B00911880 /* EmployeeServiceable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3FD175227FDFA7B00911880 /* EmployeeServiceable.swift */; };
+		B3FD175527FDFB7400911880 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3FD175427FDFB7400911880 /* AuthService.swift */; };
+		B3FD175727FDFDF600911880 /* EmployeeService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3FD175627FDFDF600911880 /* EmployeeService.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B36A3B4727FD3824004E5353 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B36A3B2827FD381E004E5353 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B36A3B2F27FD381E004E5353;
+			remoteInfo = Manpower;
+		};
+		B36A3B5127FD3824004E5353 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B36A3B2827FD381E004E5353 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B36A3B2F27FD381E004E5353;
+			remoteInfo = Manpower;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		B32522722803E5DB00F8F869 /* SigninViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SigninViewModelTests.swift; sourceTree = "<group>"; };
+		B32522742803E9F200F8F869 /* DashboardViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewModelTests.swift; sourceTree = "<group>"; };
+		B325227A2803F4A400F8F869 /* EmployeeFormViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeFormViewModelTests.swift; sourceTree = "<group>"; };
+		B36A3B3027FD381E004E5353 /* Manpower.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Manpower.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B36A3B3327FD381E004E5353 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B36A3B3527FD381E004E5353 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		B36A3B3A27FD381E004E5353 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Onboarding.storyboard; sourceTree = "<group>"; };
+		B36A3B3C27FD3822004E5353 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B36A3B3F27FD3822004E5353 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B36A3B4127FD3822004E5353 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B36A3B4627FD3824004E5353 /* ManpowerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ManpowerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B36A3B4A27FD3824004E5353 /* ManpowerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManpowerTests.swift; sourceTree = "<group>"; };
+		B36A3B5027FD3824004E5353 /* ManpowerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ManpowerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B36A3B5427FD3824004E5353 /* ManpowerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManpowerUITests.swift; sourceTree = "<group>"; };
+		B36A3B5627FD3824004E5353 /* ManpowerUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManpowerUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		B38378E627FED9B7004DEFCE /* DashboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewController.swift; sourceTree = "<group>"; };
+		B38378E827FED9C6004DEFCE /* Dashboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Dashboard.storyboard; sourceTree = "<group>"; };
+		B38378EA27FEF51E004DEFCE /* EmailValidateable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailValidateable.swift; sourceTree = "<group>"; };
+		B38378EE27FF03C4004DEFCE /* EmployeeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeTableViewCell.swift; sourceTree = "<group>"; };
+		B38378EF27FF03C4004DEFCE /* EmployeeTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EmployeeTableViewCell.xib; sourceTree = "<group>"; };
+		B38378F227FFC7AD004DEFCE /* DashboardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewModel.swift; sourceTree = "<group>"; };
+		B38378F427FFD1E0004DEFCE /* ApplicationCoordinator+Dashboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ApplicationCoordinator+Dashboard.swift"; sourceTree = "<group>"; };
+		B38378F727FFD334004DEFCE /* EmployeeFormViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeFormViewController.swift; sourceTree = "<group>"; };
+		B38378F927FFD341004DEFCE /* EmployeeFormViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeFormViewModel.swift; sourceTree = "<group>"; };
+		B3B0EBB627FD624B00CA5048 /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
+		B3BBCBB027FD6E5000E0E73C /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		B3BBCBB227FD6FB300E0E73C /* Storyboarded.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storyboarded.swift; sourceTree = "<group>"; };
+		B3BBCBB427FD6FDB00E0E73C /* ApplicationCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationCoordinator.swift; sourceTree = "<group>"; };
+		B3E9E7D72803C8DA001AA9E7 /* AuthServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthServiceTests.swift; sourceTree = "<group>"; };
+		B3E9E7D92803C91B001AA9E7 /* AuthMockService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthMockService.swift; sourceTree = "<group>"; };
+		B3E9E7DC2803C9B8001AA9E7 /* EmployeeMockService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeMockService.swift; sourceTree = "<group>"; };
+		B3E9E7DE2803CF02001AA9E7 /* EmployeeServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeServiceTests.swift; sourceTree = "<group>"; };
+		B3E9E7E12803D207001AA9E7 /* SignupViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupViewModelTests.swift; sourceTree = "<group>"; };
+		B3FD172427FD72FD00911880 /* Storyboards.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storyboards.swift; sourceTree = "<group>"; };
+		B3FD172927FD7A3100911880 /* SigninViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SigninViewController.swift; sourceTree = "<group>"; };
+		B3FD172B27FD822200911880 /* SigninViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SigninViewModel.swift; sourceTree = "<group>"; };
+		B3FD172F27FD860900911880 /* ApplicationCoordinator+Signin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ApplicationCoordinator+Signin.swift"; sourceTree = "<group>"; };
+		B3FD173127FD863300911880 /* ApplicationCoordinator+Onboarding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ApplicationCoordinator+Onboarding.swift"; sourceTree = "<group>"; };
+		B3FD173327FD88D600911880 /* ApplicationCoordinator+Navigation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ApplicationCoordinator+Navigation.swift"; sourceTree = "<group>"; };
+		B3FD173627FD8C2600911880 /* SignupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
+		B3FD173F27FD9EE300911880 /* ApplicationCoordinator+Signup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ApplicationCoordinator+Signup.swift"; sourceTree = "<group>"; };
+		B3FD174127FDA9FF00911880 /* SignupViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupViewModel.swift; sourceTree = "<group>"; };
+		B3FD174327FDAAA100911880 /* TextFieldStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldStatus.swift; sourceTree = "<group>"; };
+		B3FD174627FDB00500911880 /* Reactive+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Reactive+Extensions.swift"; sourceTree = "<group>"; };
+		B3FD174827FDF88A00911880 /* FileLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileLoader.swift; sourceTree = "<group>"; };
+		B3FD174A27FDF8B300911880 /* Saveable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Saveable.swift; sourceTree = "<group>"; };
+		B3FD174C27FDF8D100911880 /* AuthServiceable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthServiceable.swift; sourceTree = "<group>"; };
+		B3FD174E27FDF90100911880 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		B3FD175027FDF91C00911880 /* Employee.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Employee.swift; sourceTree = "<group>"; };
+		B3FD175227FDFA7B00911880 /* EmployeeServiceable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeServiceable.swift; sourceTree = "<group>"; };
+		B3FD175427FDFB7400911880 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
+		B3FD175627FDFDF600911880 /* EmployeeService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeService.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B36A3B2D27FD381E004E5353 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B3E9E7FB2803D9C5001AA9E7 /* RxSwift in Frameworks */,
+				B3E9E7F92803D9C5001AA9E7 /* RxRelay in Frameworks */,
+				B3E9E7F72803D9C5001AA9E7 /* RxCocoa in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B36A3B4327FD3824004E5353 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B36A3B4D27FD3824004E5353 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B325227C2803F64500F8F869 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				B3E9E7D72803C8DA001AA9E7 /* AuthServiceTests.swift */,
+				B3E9E7DE2803CF02001AA9E7 /* EmployeeServiceTests.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		B36A3B2727FD381E004E5353 = {
+			isa = PBXGroup;
+			children = (
+				B36A3B3227FD381E004E5353 /* Manpower */,
+				B36A3B4927FD3824004E5353 /* ManpowerTests */,
+				B36A3B5327FD3824004E5353 /* ManpowerUITests */,
+				B36A3B3127FD381E004E5353 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B36A3B3127FD381E004E5353 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B36A3B3027FD381E004E5353 /* Manpower.app */,
+				B36A3B4627FD3824004E5353 /* ManpowerTests.xctest */,
+				B36A3B5027FD3824004E5353 /* ManpowerUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B36A3B3227FD381E004E5353 /* Manpower */ = {
+			isa = PBXGroup;
+			children = (
+				B3B0EBB427FD620B00CA5048 /* Application Coordinator */,
+				B3FD174527FDAFF700911880 /* Custom Components */,
+				B3B0EBB027FD61E800CA5048 /* Enums */,
+				B3B0EBB327FD61FE00CA5048 /* Main Delegates */,
+				B3B0EBAE27FD61DD00CA5048 /* Models */,
+				B3B0EBAC27FD61D400CA5048 /* Protocols */,
+				B3B0EBB227FD61F500CA5048 /* Resources */,
+				B3B0EBAD27FD61D900CA5048 /* Scenes */,
+				B3B0EBAF27FD61E200CA5048 /* Services */,
+				B3FD172827FD7A0200911880 /* Storyboards */,
+				B3B0EBB127FD61F000CA5048 /* Supporting Files */,
+			);
+			path = Manpower;
+			sourceTree = "<group>";
+		};
+		B36A3B4927FD3824004E5353 /* ManpowerTests */ = {
+			isa = PBXGroup;
+			children = (
+				B325227C2803F64500F8F869 /* Services */,
+				B3E9E7E02803D1ED001AA9E7 /* View Models */,
+				B36A3B4A27FD3824004E5353 /* ManpowerTests.swift */,
+			);
+			path = ManpowerTests;
+			sourceTree = "<group>";
+		};
+		B36A3B5327FD3824004E5353 /* ManpowerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				B36A3B5427FD3824004E5353 /* ManpowerUITests.swift */,
+				B36A3B5627FD3824004E5353 /* ManpowerUITestsLaunchTests.swift */,
+			);
+			path = ManpowerUITests;
+			sourceTree = "<group>";
+		};
+		B38378E527FED99A004DEFCE /* Dashboard */ = {
+			isa = PBXGroup;
+			children = (
+				B38378F627FFD2DF004DEFCE /* Form */,
+				B38378E627FED9B7004DEFCE /* DashboardViewController.swift */,
+				B38378F227FFC7AD004DEFCE /* DashboardViewModel.swift */,
+			);
+			path = Dashboard;
+			sourceTree = "<group>";
+		};
+		B38378EC27FF0388004DEFCE /* UITableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				B38378ED27FF039E004DEFCE /* Employee */,
+			);
+			path = UITableViewCell;
+			sourceTree = "<group>";
+		};
+		B38378ED27FF039E004DEFCE /* Employee */ = {
+			isa = PBXGroup;
+			children = (
+				B38378EE27FF03C4004DEFCE /* EmployeeTableViewCell.swift */,
+				B38378EF27FF03C4004DEFCE /* EmployeeTableViewCell.xib */,
+			);
+			path = Employee;
+			sourceTree = "<group>";
+		};
+		B38378F627FFD2DF004DEFCE /* Form */ = {
+			isa = PBXGroup;
+			children = (
+				B38378F727FFD334004DEFCE /* EmployeeFormViewController.swift */,
+				B38378F927FFD341004DEFCE /* EmployeeFormViewModel.swift */,
+			);
+			path = Form;
+			sourceTree = "<group>";
+		};
+		B3B0EBAC27FD61D400CA5048 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				B3BBCBB027FD6E5000E0E73C /* Coordinator.swift */,
+				B3BBCBB227FD6FB300E0E73C /* Storyboarded.swift */,
+				B3FD174A27FDF8B300911880 /* Saveable.swift */,
+				B3FD174C27FDF8D100911880 /* AuthServiceable.swift */,
+				B3FD175227FDFA7B00911880 /* EmployeeServiceable.swift */,
+				B38378EA27FEF51E004DEFCE /* EmailValidateable.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		B3B0EBAD27FD61D900CA5048 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				B38378E527FED99A004DEFCE /* Dashboard */,
+				B3B0EBB527FD622800CA5048 /* Onboarding */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		B3B0EBAE27FD61DD00CA5048 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				B3FD174E27FDF90100911880 /* User.swift */,
+				B3FD175027FDF91C00911880 /* Employee.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		B3B0EBAF27FD61E200CA5048 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				B3E9E7DB2803C993001AA9E7 /* Mocks */,
+				B3FD174827FDF88A00911880 /* FileLoader.swift */,
+				B3FD175427FDFB7400911880 /* AuthService.swift */,
+				B3FD175627FDFDF600911880 /* EmployeeService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		B3B0EBB027FD61E800CA5048 /* Enums */ = {
+			isa = PBXGroup;
+			children = (
+				B3FD172427FD72FD00911880 /* Storyboards.swift */,
+				B3FD174327FDAAA100911880 /* TextFieldStatus.swift */,
+			);
+			path = Enums;
+			sourceTree = "<group>";
+		};
+		B3B0EBB127FD61F000CA5048 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B36A3B3E27FD3822004E5353 /* LaunchScreen.storyboard */,
+				B36A3B4127FD3822004E5353 /* Info.plist */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B3B0EBB227FD61F500CA5048 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				B36A3B3C27FD3822004E5353 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		B3B0EBB327FD61FE00CA5048 /* Main Delegates */ = {
+			isa = PBXGroup;
+			children = (
+				B36A3B3327FD381E004E5353 /* AppDelegate.swift */,
+				B36A3B3527FD381E004E5353 /* SceneDelegate.swift */,
+			);
+			path = "Main Delegates";
+			sourceTree = "<group>";
+		};
+		B3B0EBB427FD620B00CA5048 /* Application Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				B3BBCBB427FD6FDB00E0E73C /* ApplicationCoordinator.swift */,
+				B3FD173327FD88D600911880 /* ApplicationCoordinator+Navigation.swift */,
+				B3FD172F27FD860900911880 /* ApplicationCoordinator+Signin.swift */,
+				B3FD173127FD863300911880 /* ApplicationCoordinator+Onboarding.swift */,
+				B3FD173F27FD9EE300911880 /* ApplicationCoordinator+Signup.swift */,
+				B38378F427FFD1E0004DEFCE /* ApplicationCoordinator+Dashboard.swift */,
+			);
+			path = "Application Coordinator";
+			sourceTree = "<group>";
+		};
+		B3B0EBB527FD622800CA5048 /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				B3FD173527FD8C1500911880 /* Sign up */,
+				B3FD172627FD767200911880 /* Sign in */,
+				B3B0EBB627FD624B00CA5048 /* OnboardingViewController.swift */,
+			);
+			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		B3E9E7DB2803C993001AA9E7 /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				B3E9E7D92803C91B001AA9E7 /* AuthMockService.swift */,
+				B3E9E7DC2803C9B8001AA9E7 /* EmployeeMockService.swift */,
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
+		B3E9E7E02803D1ED001AA9E7 /* View Models */ = {
+			isa = PBXGroup;
+			children = (
+				B3E9E7E12803D207001AA9E7 /* SignupViewModelTests.swift */,
+				B32522722803E5DB00F8F869 /* SigninViewModelTests.swift */,
+				B32522742803E9F200F8F869 /* DashboardViewModelTests.swift */,
+				B325227A2803F4A400F8F869 /* EmployeeFormViewModelTests.swift */,
+			);
+			path = "View Models";
+			sourceTree = "<group>";
+		};
+		B3FD172627FD767200911880 /* Sign in */ = {
+			isa = PBXGroup;
+			children = (
+				B3FD172927FD7A3100911880 /* SigninViewController.swift */,
+				B3FD172B27FD822200911880 /* SigninViewModel.swift */,
+			);
+			path = "Sign in";
+			sourceTree = "<group>";
+		};
+		B3FD172827FD7A0200911880 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				B36A3B3927FD381E004E5353 /* Onboarding.storyboard */,
+				B38378E827FED9C6004DEFCE /* Dashboard.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		B3FD173527FD8C1500911880 /* Sign up */ = {
+			isa = PBXGroup;
+			children = (
+				B3FD173627FD8C2600911880 /* SignupViewController.swift */,
+				B3FD174127FDA9FF00911880 /* SignupViewModel.swift */,
+			);
+			path = "Sign up";
+			sourceTree = "<group>";
+		};
+		B3FD174527FDAFF700911880 /* Custom Components */ = {
+			isa = PBXGroup;
+			children = (
+				B38378EC27FF0388004DEFCE /* UITableViewCell */,
+				B3FD174627FDB00500911880 /* Reactive+Extensions.swift */,
+			);
+			path = "Custom Components";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B36A3B2F27FD381E004E5353 /* Manpower */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B36A3B5A27FD3824004E5353 /* Build configuration list for PBXNativeTarget "Manpower" */;
+			buildPhases = (
+				B36A3B2C27FD381E004E5353 /* Sources */,
+				B36A3B2D27FD381E004E5353 /* Frameworks */,
+				B36A3B2E27FD381E004E5353 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Manpower;
+			packageProductDependencies = (
+				B3E9E7F62803D9C5001AA9E7 /* RxCocoa */,
+				B3E9E7F82803D9C5001AA9E7 /* RxRelay */,
+				B3E9E7FA2803D9C5001AA9E7 /* RxSwift */,
+			);
+			productName = Manpower;
+			productReference = B36A3B3027FD381E004E5353 /* Manpower.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B36A3B4527FD3824004E5353 /* ManpowerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B36A3B5D27FD3824004E5353 /* Build configuration list for PBXNativeTarget "ManpowerTests" */;
+			buildPhases = (
+				B36A3B4227FD3824004E5353 /* Sources */,
+				B36A3B4327FD3824004E5353 /* Frameworks */,
+				B36A3B4427FD3824004E5353 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B36A3B4827FD3824004E5353 /* PBXTargetDependency */,
+			);
+			name = ManpowerTests;
+			productName = ManpowerTests;
+			productReference = B36A3B4627FD3824004E5353 /* ManpowerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		B36A3B4F27FD3824004E5353 /* ManpowerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B36A3B6027FD3824004E5353 /* Build configuration list for PBXNativeTarget "ManpowerUITests" */;
+			buildPhases = (
+				B36A3B4C27FD3824004E5353 /* Sources */,
+				B36A3B4D27FD3824004E5353 /* Frameworks */,
+				B36A3B4E27FD3824004E5353 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B36A3B5227FD3824004E5353 /* PBXTargetDependency */,
+			);
+			name = ManpowerUITests;
+			productName = ManpowerUITests;
+			productReference = B36A3B5027FD3824004E5353 /* ManpowerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B36A3B2827FD381E004E5353 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1330;
+				LastUpgradeCheck = 1330;
+				TargetAttributes = {
+					B36A3B2F27FD381E004E5353 = {
+						CreatedOnToolsVersion = 13.3;
+					};
+					B36A3B4527FD3824004E5353 = {
+						CreatedOnToolsVersion = 13.3;
+						TestTargetID = B36A3B2F27FD381E004E5353;
+					};
+					B36A3B4F27FD3824004E5353 = {
+						CreatedOnToolsVersion = 13.3;
+						TestTargetID = B36A3B2F27FD381E004E5353;
+					};
+				};
+			};
+			buildConfigurationList = B36A3B2B27FD381E004E5353 /* Build configuration list for PBXProject "Manpower" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B36A3B2727FD381E004E5353;
+			packageReferences = (
+				B3E9E7F52803D9C5001AA9E7 /* XCRemoteSwiftPackageReference "RxSwift" */,
+			);
+			productRefGroup = B36A3B3127FD381E004E5353 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B36A3B2F27FD381E004E5353 /* Manpower */,
+				B36A3B4527FD3824004E5353 /* ManpowerTests */,
+				B36A3B4F27FD3824004E5353 /* ManpowerUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B36A3B2E27FD381E004E5353 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B36A3B4027FD3822004E5353 /* LaunchScreen.storyboard in Resources */,
+				B38378F127FF03C4004DEFCE /* EmployeeTableViewCell.xib in Resources */,
+				B36A3B3D27FD3822004E5353 /* Assets.xcassets in Resources */,
+				B36A3B3B27FD381E004E5353 /* Onboarding.storyboard in Resources */,
+				B38378E927FED9C6004DEFCE /* Dashboard.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B36A3B4427FD3824004E5353 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B36A3B4E27FD3824004E5353 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B36A3B2C27FD381E004E5353 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B3FD174727FDB00500911880 /* Reactive+Extensions.swift in Sources */,
+				B38378F327FFC7AD004DEFCE /* DashboardViewModel.swift in Sources */,
+				B38378F027FF03C4004DEFCE /* EmployeeTableViewCell.swift in Sources */,
+				B36A3B3427FD381E004E5353 /* AppDelegate.swift in Sources */,
+				B3FD173427FD88D600911880 /* ApplicationCoordinator+Navigation.swift in Sources */,
+				B3FD175127FDF91C00911880 /* Employee.swift in Sources */,
+				B3BBCBB127FD6E5000E0E73C /* Coordinator.swift in Sources */,
+				B36A3B3627FD381E004E5353 /* SceneDelegate.swift in Sources */,
+				B3E9E7DA2803C91B001AA9E7 /* AuthMockService.swift in Sources */,
+				B3FD172C27FD822200911880 /* SigninViewModel.swift in Sources */,
+				B38378EB27FEF51E004DEFCE /* EmailValidateable.swift in Sources */,
+				B38378E727FED9B7004DEFCE /* DashboardViewController.swift in Sources */,
+				B3FD175727FDFDF600911880 /* EmployeeService.swift in Sources */,
+				B3FD174927FDF88A00911880 /* FileLoader.swift in Sources */,
+				B3FD174027FD9EE300911880 /* ApplicationCoordinator+Signup.swift in Sources */,
+				B3FD173227FD863300911880 /* ApplicationCoordinator+Onboarding.swift in Sources */,
+				B3B0EBB727FD624B00CA5048 /* OnboardingViewController.swift in Sources */,
+				B3FD172A27FD7A3100911880 /* SigninViewController.swift in Sources */,
+				B3BBCBB327FD6FB300E0E73C /* Storyboarded.swift in Sources */,
+				B3FD174227FDA9FF00911880 /* SignupViewModel.swift in Sources */,
+				B3FD173727FD8C2600911880 /* SignupViewController.swift in Sources */,
+				B3FD175527FDFB7400911880 /* AuthService.swift in Sources */,
+				B3FD173027FD860900911880 /* ApplicationCoordinator+Signin.swift in Sources */,
+				B38378FA27FFD341004DEFCE /* EmployeeFormViewModel.swift in Sources */,
+				B3FD174D27FDF8D100911880 /* AuthServiceable.swift in Sources */,
+				B3FD174B27FDF8B300911880 /* Saveable.swift in Sources */,
+				B3FD174427FDAAA100911880 /* TextFieldStatus.swift in Sources */,
+				B3BBCBB527FD6FDB00E0E73C /* ApplicationCoordinator.swift in Sources */,
+				B38378F527FFD1E0004DEFCE /* ApplicationCoordinator+Dashboard.swift in Sources */,
+				B3FD172527FD72FD00911880 /* Storyboards.swift in Sources */,
+				B38378F827FFD334004DEFCE /* EmployeeFormViewController.swift in Sources */,
+				B3E9E7DD2803C9B8001AA9E7 /* EmployeeMockService.swift in Sources */,
+				B3FD174F27FDF90100911880 /* User.swift in Sources */,
+				B3FD175327FDFA7B00911880 /* EmployeeServiceable.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B36A3B4227FD3824004E5353 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B32522732803E5DB00F8F869 /* SigninViewModelTests.swift in Sources */,
+				B3E9E7DF2803CF02001AA9E7 /* EmployeeServiceTests.swift in Sources */,
+				B36A3B4B27FD3824004E5353 /* ManpowerTests.swift in Sources */,
+				B32522752803E9F200F8F869 /* DashboardViewModelTests.swift in Sources */,
+				B3E9E7E22803D207001AA9E7 /* SignupViewModelTests.swift in Sources */,
+				B3E9E7D82803C8DA001AA9E7 /* AuthServiceTests.swift in Sources */,
+				B325227B2803F4A400F8F869 /* EmployeeFormViewModelTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B36A3B4C27FD3824004E5353 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B36A3B5727FD3824004E5353 /* ManpowerUITestsLaunchTests.swift in Sources */,
+				B36A3B5527FD3824004E5353 /* ManpowerUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B36A3B4827FD3824004E5353 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B36A3B2F27FD381E004E5353 /* Manpower */;
+			targetProxy = B36A3B4727FD3824004E5353 /* PBXContainerItemProxy */;
+		};
+		B36A3B5227FD3824004E5353 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B36A3B2F27FD381E004E5353 /* Manpower */;
+			targetProxy = B36A3B5127FD3824004E5353 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		B36A3B3927FD381E004E5353 /* Onboarding.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B36A3B3A27FD381E004E5353 /* Base */,
+			);
+			name = Onboarding.storyboard;
+			sourceTree = "<group>";
+		};
+		B36A3B3E27FD3822004E5353 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B36A3B3F27FD3822004E5353 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B36A3B5827FD3824004E5353 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		B36A3B5927FD3824004E5353 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B36A3B5B27FD3824004E5353 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Manpower/Supporting Files/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Onboarding;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = jaimejazarenoiii.Manpower;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B36A3B5C27FD3824004E5353 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Manpower/Supporting Files/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Onboarding;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = jaimejazarenoiii.Manpower;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		B36A3B5E27FD3824004E5353 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = jaimejazarenoiii.ManpowerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Manpower.app/Manpower";
+			};
+			name = Debug;
+		};
+		B36A3B5F27FD3824004E5353 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = jaimejazarenoiii.ManpowerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Manpower.app/Manpower";
+			};
+			name = Release;
+		};
+		B36A3B6127FD3824004E5353 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = jaimejazarenoiii.ManpowerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Manpower;
+			};
+			name = Debug;
+		};
+		B36A3B6227FD3824004E5353 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = jaimejazarenoiii.ManpowerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Manpower;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B36A3B2B27FD381E004E5353 /* Build configuration list for PBXProject "Manpower" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B36A3B5827FD3824004E5353 /* Debug */,
+				B36A3B5927FD3824004E5353 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B36A3B5A27FD3824004E5353 /* Build configuration list for PBXNativeTarget "Manpower" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B36A3B5B27FD3824004E5353 /* Debug */,
+				B36A3B5C27FD3824004E5353 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B36A3B5D27FD3824004E5353 /* Build configuration list for PBXNativeTarget "ManpowerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B36A3B5E27FD3824004E5353 /* Debug */,
+				B36A3B5F27FD3824004E5353 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B36A3B6027FD3824004E5353 /* Build configuration list for PBXNativeTarget "ManpowerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B36A3B6127FD3824004E5353 /* Debug */,
+				B36A3B6227FD3824004E5353 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		B3E9E7F52803D9C5001AA9E7 /* XCRemoteSwiftPackageReference "RxSwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ReactiveX/RxSwift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		B3E9E7F62803D9C5001AA9E7 /* RxCocoa */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B3E9E7F52803D9C5001AA9E7 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxCocoa;
+		};
+		B3E9E7F82803D9C5001AA9E7 /* RxRelay */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B3E9E7F52803D9C5001AA9E7 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxRelay;
+		};
+		B3E9E7FA2803D9C5001AA9E7 /* RxSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B3E9E7F52803D9C5001AA9E7 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = B36A3B2827FD381E004E5353 /* Project object */;
+}
