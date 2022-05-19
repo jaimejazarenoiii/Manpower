@@ -9,28 +9,27 @@ import UIKit
 import RxSwift
 import RxCocoa
 
-protocol OnboardingViewControllerDelegate: AnyObject {
-    func didTapSignin(source: OnboardingViewController)
-    func didTapSignup(source: OnboardingViewController)
-}
-
 class OnboardingViewController: UIViewController, Storyboarded {
-    @IBOutlet weak var signinButton: UIButton!
-    @IBOutlet weak var signupButton: UIButton!
-    weak var delegate: OnboardingViewControllerDelegate?
-    private let disposeBag = DisposeBag()
+  @IBOutlet weak var signinButton: UIButton!
+  @IBOutlet weak var signupButton: UIButton!
+  let disposeBag = DisposeBag()
+  var viewModel: OnboardingViewModelType?
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        setupBindings()
-    }
+  deinit {
+    print("OnboardingViewController#deinit")
+  }
 
-    private func setupBindings() {
-        signinButton.rx.tap.bind { [unowned self] _ in
-            self.delegate?.didTapSignin(source: self)
-        }.disposed(by: disposeBag)
-        signupButton.rx.tap.bind { [unowned self] _ in
-            self.delegate?.didTapSignup(source: self)
-        }.disposed(by: disposeBag)
-    }
+  override func viewDidLoad() {
+    super.viewDidLoad()
+    setupBindings()
+  }
+
+  private func setupBindings() {
+    signinButton.rx.tap.subscribe(onNext: { [weak self] _ in
+      self?.viewModel?.inputs.signinIsTapped()
+    }).disposed(by: disposeBag)
+    signupButton.rx.tap.subscribe(onNext: { [weak self] _ in
+      self?.viewModel?.inputs.signupIsTapped()
+    }).disposed(by: disposeBag)
+  }
 }

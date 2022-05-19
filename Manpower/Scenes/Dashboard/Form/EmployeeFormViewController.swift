@@ -84,12 +84,12 @@ class EmployeeFormViewController: UIViewController, Storyboarded {
             .bind(onNext: show(err:))
             .disposed(by: disposeBag)
 
-        saveButton.rx.tap.bind(onNext: { [unowned self] _ in
-            self.viewModel.inputs.save()
+        saveButton.rx.tap.bind(onNext: { [weak self] _ in
+          self?.viewModel.inputs.save()
         }).disposed(by: disposeBag)
 
-        cancelButton.rx.tap.bind { [unowned self] _ in
-            self.dismiss(animated: true)
+        cancelButton.rx.tap.bind { [weak self] _ in
+            self?.dismiss(animated: true)
         }.disposed(by: disposeBag)
 
         viewModel.inputs.viewDidLoad()

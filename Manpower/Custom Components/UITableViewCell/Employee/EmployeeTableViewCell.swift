@@ -58,7 +58,8 @@ class EmployeeTableViewCell: UITableViewCell {
 
     private func setupBindings() {
         statusSwitch.rx.isOn
-            .subscribe(onNext: { [unowned self] isOn in
+            .subscribe(onNext: { [weak self] isOn in
+              guard let self = self else { return }
                 self.delegate?.didToggleStatus(source: self, employee: self.employee!, isOn: isOn)
             }).disposed(by: disposeBag)
 
