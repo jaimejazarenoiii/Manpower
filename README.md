@@ -22,3 +22,5 @@ E.g
 * When do we separate it to another coordinator? If it has its own flow inside. Like this one:
 ![SignupCoordinator](https://i.imgur.com/71uvJdf.png)
 Earlier, we put the signup page inside onboarding coordinator, because it doesn't have its own flow, it's considered a page inside of onboarding flow, but now since the sign up page has multiple screens due to multiple steps for signing up, we can now separate it to a new coordinator.
+
+* Diagram -> https://app.creately.com/d/qJJXVSLX6VJ/
