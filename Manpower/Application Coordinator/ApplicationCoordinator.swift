@@ -6,29 +6,52 @@
 //
 
 import UIKit
+import RxSwift
 
-class ApplicationCoordinator: Coordinator {
-    var navigationController: UINavigationController
-    var authServiceable: AuthServiceable
-    var employeeServiceable: EmployeeServiceable?
-    var currentUser: User?
+class ApplicationCoordinator: BaseCoordinator {
+  var navigationController: UINavigationController
+  var authServiceable: AuthServiceable
+  var employeeServiceable: EmployeeServiceable?
+  var currentUser: User?
+  private let disposeBag = DisposeBag()
 
-    init(navigationController: UINavigationController) {
-        self.navigationController = navigationController
-        authServiceable = AuthService()
-        guard currentUser != nil else { return }
-        setupAuthRequiredServices()
-    }
+  init(navigationController: UINavigationController) {
+    self.navigationController = navigationController
+    authServiceable = AuthService()
+    super.init()
+    setupBindings()
+  }
 
-    func start() {
-        let userId = UserDefaults.standard.string(forKey: "userId")
-        guard userId != nil else { return goToOnboarding() }
-        currentUser = authServiceable.getCurrentUser()!
-        setupAuthRequiredServices()
-        goToDashboard()
-    }
+  override func start() {
+    currentUser = authServiceable.getCurrentUser()
+    currentUser != nil ? goToDashboard() : goToOnboarding()
+  }
 
-    func setupAuthRequiredServices() {
-        employeeServiceable = EmployeeService(currentUser: currentUser!)
-    }
+  private func setupBindings() {
+    let center = NotificationCenter.default
+
+    center.rx.notification(NSNotification.Name("authChanged"))
+      .subscribe(onNext: { [weak self] notif in
+        guard let self = self else { return }
+        self.childCoordinators.removeAll()
+        self.start()
+      })
+      .disposed(by: disposeBag)
+  }
+
+  func goToOnboarding() {
+    let coordinator = OnboardingCoordinator(navigationController: navigationController)
+    coordinator.parentCoordinator = self
+    store(coordinator: coordinator)
+    coordinator.start()
+  }
+
+  func goToDashboard() {
+    let coordinator = DashboardCoordinator(navigationController: navigationController)
+    coordinator.parentCoordinator = self
+    store(coordinator: coordinator)
+    coordinator.start()
+  }
+
+  override func didFinish() {}
 }

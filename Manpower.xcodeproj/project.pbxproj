@@ -24,13 +24,17 @@
 		B38378F027FF03C4004DEFCE /* EmployeeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B38378EE27FF03C4004DEFCE /* EmployeeTableViewCell.swift */; };
 		B38378F127FF03C4004DEFCE /* EmployeeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B38378EF27FF03C4004DEFCE /* EmployeeTableViewCell.xib */; };
 		B38378F327FFC7AD004DEFCE /* DashboardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B38378F227FFC7AD004DEFCE /* DashboardViewModel.swift */; };
-		B38378F527FFD1E0004DEFCE /* ApplicationCoordinator+Dashboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = B38378F427FFD1E0004DEFCE /* ApplicationCoordinator+Dashboard.swift */; };
 		B38378F827FFD334004DEFCE /* EmployeeFormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B38378F727FFD334004DEFCE /* EmployeeFormViewController.swift */; };
 		B38378FA27FFD341004DEFCE /* EmployeeFormViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B38378F927FFD341004DEFCE /* EmployeeFormViewModel.swift */; };
+		B3A069C4281BA176003F942F /* DashboardCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3A069C3281BA176003F942F /* DashboardCoordinator.swift */; };
+		B3A069C6281BA748003F942F /* SigninCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3A069C5281BA748003F942F /* SigninCoordinator.swift */; };
+		B3A069C8281BA74F003F942F /* SignupCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3A069C7281BA74F003F942F /* SignupCoordinator.swift */; };
+		B3A069CA281BB03B003F942F /* OnboardingCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3A069C9281BB03B003F942F /* OnboardingCoordinator.swift */; };
 		B3B0EBB727FD624B00CA5048 /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3B0EBB627FD624B00CA5048 /* OnboardingViewController.swift */; };
 		B3BBCBB127FD6E5000E0E73C /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3BBCBB027FD6E5000E0E73C /* Coordinator.swift */; };
 		B3BBCBB327FD6FB300E0E73C /* Storyboarded.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3BBCBB227FD6FB300E0E73C /* Storyboarded.swift */; };
 		B3BBCBB527FD6FDB00E0E73C /* ApplicationCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3BBCBB427FD6FDB00E0E73C /* ApplicationCoordinator.swift */; };
+		B3DAB7B728237AE7000A05D8 /* OnboardingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3DAB7B628237AE7000A05D8 /* OnboardingViewModel.swift */; };
 		B3E9E7D82803C8DA001AA9E7 /* AuthServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3E9E7D72803C8DA001AA9E7 /* AuthServiceTests.swift */; };
 		B3E9E7DA2803C91B001AA9E7 /* AuthMockService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3E9E7D92803C91B001AA9E7 /* AuthMockService.swift */; };
 		B3E9E7DD2803C9B8001AA9E7 /* EmployeeMockService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3E9E7DC2803C9B8001AA9E7 /* EmployeeMockService.swift */; };
@@ -42,11 +46,7 @@
 		B3FD172527FD72FD00911880 /* Storyboards.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3FD172427FD72FD00911880 /* Storyboards.swift */; };
 		B3FD172A27FD7A3100911880 /* SigninViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3FD172927FD7A3100911880 /* SigninViewController.swift */; };
 		B3FD172C27FD822200911880 /* SigninViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3FD172B27FD822200911880 /* SigninViewModel.swift */; };
-		B3FD173027FD860900911880 /* ApplicationCoordinator+Signin.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3FD172F27FD860900911880 /* ApplicationCoordinator+Signin.swift */; };
-		B3FD173227FD863300911880 /* ApplicationCoordinator+Onboarding.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3FD173127FD863300911880 /* ApplicationCoordinator+Onboarding.swift */; };
-		B3FD173427FD88D600911880 /* ApplicationCoordinator+Navigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3FD173327FD88D600911880 /* ApplicationCoordinator+Navigation.swift */; };
 		B3FD173727FD8C2600911880 /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3FD173627FD8C2600911880 /* SignupViewController.swift */; };
-		B3FD174027FD9EE300911880 /* ApplicationCoordinator+Signup.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3FD173F27FD9EE300911880 /* ApplicationCoordinator+Signup.swift */; };
 		B3FD174227FDA9FF00911880 /* SignupViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3FD174127FDA9FF00911880 /* SignupViewModel.swift */; };
 		B3FD174427FDAAA100911880 /* TextFieldStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3FD174327FDAAA100911880 /* TextFieldStatus.swift */; };
 		B3FD174727FDB00500911880 /* Reactive+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3FD174627FDB00500911880 /* Reactive+Extensions.swift */; };
@@ -99,13 +99,17 @@
 		B38378EE27FF03C4004DEFCE /* EmployeeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeTableViewCell.swift; sourceTree = "<group>"; };
 		B38378EF27FF03C4004DEFCE /* EmployeeTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EmployeeTableViewCell.xib; sourceTree = "<group>"; };
 		B38378F227FFC7AD004DEFCE /* DashboardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewModel.swift; sourceTree = "<group>"; };
-		B38378F427FFD1E0004DEFCE /* ApplicationCoordinator+Dashboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ApplicationCoordinator+Dashboard.swift"; sourceTree = "<group>"; };
 		B38378F727FFD334004DEFCE /* EmployeeFormViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeFormViewController.swift; sourceTree = "<group>"; };
 		B38378F927FFD341004DEFCE /* EmployeeFormViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeFormViewModel.swift; sourceTree = "<group>"; };
+		B3A069C3281BA176003F942F /* DashboardCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardCoordinator.swift; sourceTree = "<group>"; };
+		B3A069C5281BA748003F942F /* SigninCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SigninCoordinator.swift; sourceTree = "<group>"; };
+		B3A069C7281BA74F003F942F /* SignupCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupCoordinator.swift; sourceTree = "<group>"; };
+		B3A069C9281BB03B003F942F /* OnboardingCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingCoordinator.swift; sourceTree = "<group>"; };
 		B3B0EBB627FD624B00CA5048 /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
 		B3BBCBB027FD6E5000E0E73C /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 		B3BBCBB227FD6FB300E0E73C /* Storyboarded.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storyboarded.swift; sourceTree = "<group>"; };
 		B3BBCBB427FD6FDB00E0E73C /* ApplicationCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationCoordinator.swift; sourceTree = "<group>"; };
+		B3DAB7B628237AE7000A05D8 /* OnboardingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewModel.swift; sourceTree = "<group>"; };
 		B3E9E7D72803C8DA001AA9E7 /* AuthServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthServiceTests.swift; sourceTree = "<group>"; };
 		B3E9E7D92803C91B001AA9E7 /* AuthMockService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthMockService.swift; sourceTree = "<group>"; };
 		B3E9E7DC2803C9B8001AA9E7 /* EmployeeMockService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeMockService.swift; sourceTree = "<group>"; };
@@ -114,11 +118,7 @@
 		B3FD172427FD72FD00911880 /* Storyboards.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storyboards.swift; sourceTree = "<group>"; };
 		B3FD172927FD7A3100911880 /* SigninViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SigninViewController.swift; sourceTree = "<group>"; };
 		B3FD172B27FD822200911880 /* SigninViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SigninViewModel.swift; sourceTree = "<group>"; };
-		B3FD172F27FD860900911880 /* ApplicationCoordinator+Signin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ApplicationCoordinator+Signin.swift"; sourceTree = "<group>"; };
-		B3FD173127FD863300911880 /* ApplicationCoordinator+Onboarding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ApplicationCoordinator+Onboarding.swift"; sourceTree = "<group>"; };
-		B3FD173327FD88D600911880 /* ApplicationCoordinator+Navigation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ApplicationCoordinator+Navigation.swift"; sourceTree = "<group>"; };
 		B3FD173627FD8C2600911880 /* SignupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
-		B3FD173F27FD9EE300911880 /* ApplicationCoordinator+Signup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ApplicationCoordinator+Signup.swift"; sourceTree = "<group>"; };
 		B3FD174127FDA9FF00911880 /* SignupViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupViewModel.swift; sourceTree = "<group>"; };
 		B3FD174327FDAAA100911880 /* TextFieldStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldStatus.swift; sourceTree = "<group>"; };
 		B3FD174627FDB00500911880 /* Reactive+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Reactive+Extensions.swift"; sourceTree = "<group>"; };
@@ -343,11 +343,10 @@
 			isa = PBXGroup;
 			children = (
 				B3BBCBB427FD6FDB00E0E73C /* ApplicationCoordinator.swift */,
-				B3FD173327FD88D600911880 /* ApplicationCoordinator+Navigation.swift */,
-				B3FD172F27FD860900911880 /* ApplicationCoordinator+Signin.swift */,
-				B3FD173127FD863300911880 /* ApplicationCoordinator+Onboarding.swift */,
-				B3FD173F27FD9EE300911880 /* ApplicationCoordinator+Signup.swift */,
-				B38378F427FFD1E0004DEFCE /* ApplicationCoordinator+Dashboard.swift */,
+				B3A069C3281BA176003F942F /* DashboardCoordinator.swift */,
+				B3A069C5281BA748003F942F /* SigninCoordinator.swift */,
+				B3A069C7281BA74F003F942F /* SignupCoordinator.swift */,
+				B3A069C9281BB03B003F942F /* OnboardingCoordinator.swift */,
 			);
 			path = "Application Coordinator";
 			sourceTree = "<group>";
@@ -358,6 +357,7 @@
 				B3FD173527FD8C1500911880 /* Sign up */,
 				B3FD172627FD767200911880 /* Sign in */,
 				B3B0EBB627FD624B00CA5048 /* OnboardingViewController.swift */,
+				B3DAB7B628237AE7000A05D8 /* OnboardingViewModel.swift */,
 			);
 			path = Onboarding;
 			sourceTree = "<group>";
@@ -563,8 +563,9 @@
 				B38378F327FFC7AD004DEFCE /* DashboardViewModel.swift in Sources */,
 				B38378F027FF03C4004DEFCE /* EmployeeTableViewCell.swift in Sources */,
 				B36A3B3427FD381E004E5353 /* AppDelegate.swift in Sources */,
-				B3FD173427FD88D600911880 /* ApplicationCoordinator+Navigation.swift in Sources */,
 				B3FD175127FDF91C00911880 /* Employee.swift in Sources */,
+				B3A069C6281BA748003F942F /* SigninCoordinator.swift in Sources */,
+				B3A069C4281BA176003F942F /* DashboardCoordinator.swift in Sources */,
 				B3BBCBB127FD6E5000E0E73C /* Coordinator.swift in Sources */,
 				B36A3B3627FD381E004E5353 /* SceneDelegate.swift in Sources */,
 				B3E9E7DA2803C91B001AA9E7 /* AuthMockService.swift in Sources */,
@@ -573,22 +574,21 @@
 				B38378E727FED9B7004DEFCE /* DashboardViewController.swift in Sources */,
 				B3FD175727FDFDF600911880 /* EmployeeService.swift in Sources */,
 				B3FD174927FDF88A00911880 /* FileLoader.swift in Sources */,
-				B3FD174027FD9EE300911880 /* ApplicationCoordinator+Signup.swift in Sources */,
-				B3FD173227FD863300911880 /* ApplicationCoordinator+Onboarding.swift in Sources */,
 				B3B0EBB727FD624B00CA5048 /* OnboardingViewController.swift in Sources */,
 				B3FD172A27FD7A3100911880 /* SigninViewController.swift in Sources */,
 				B3BBCBB327FD6FB300E0E73C /* Storyboarded.swift in Sources */,
 				B3FD174227FDA9FF00911880 /* SignupViewModel.swift in Sources */,
 				B3FD173727FD8C2600911880 /* SignupViewController.swift in Sources */,
 				B3FD175527FDFB7400911880 /* AuthService.swift in Sources */,
-				B3FD173027FD860900911880 /* ApplicationCoordinator+Signin.swift in Sources */,
+				B3A069C8281BA74F003F942F /* SignupCoordinator.swift in Sources */,
 				B38378FA27FFD341004DEFCE /* EmployeeFormViewModel.swift in Sources */,
 				B3FD174D27FDF8D100911880 /* AuthServiceable.swift in Sources */,
 				B3FD174B27FDF8B300911880 /* Saveable.swift in Sources */,
 				B3FD174427FDAAA100911880 /* TextFieldStatus.swift in Sources */,
 				B3BBCBB527FD6FDB00E0E73C /* ApplicationCoordinator.swift in Sources */,
-				B38378F527FFD1E0004DEFCE /* ApplicationCoordinator+Dashboard.swift in Sources */,
+				B3A069CA281BB03B003F942F /* OnboardingCoordinator.swift in Sources */,
 				B3FD172527FD72FD00911880 /* Storyboards.swift in Sources */,
+				B3DAB7B728237AE7000A05D8 /* OnboardingViewModel.swift in Sources */,
 				B38378F827FFD334004DEFCE /* EmployeeFormViewController.swift in Sources */,
 				B3E9E7DD2803C9B8001AA9E7 /* EmployeeMockService.swift in Sources */,
 				B3FD174F27FDF90100911880 /* User.swift in Sources */,
@@ -779,7 +779,6 @@
 				INFOPLIST_FILE = "Manpower/Supporting Files/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Onboarding;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -806,7 +805,6 @@
 				INFOPLIST_FILE = "Manpower/Supporting Files/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Onboarding;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
